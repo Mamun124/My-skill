@@ -1,0 +1,183 @@
+
+body{
+
+    background: rgb(0 0 0);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .skillT {
+        color: #113c3a;
+        text-align: center;
+        font-weight: 900;
+        text-shadow: 3px 1px 2px #00fff3;
+    }
+    
+    .skillContent {
+        background: #000000;
+        padding: 50px 30px;
+        width: 500px;
+        margin: auto;
+        border-left: 5px solid #ff7300;
+        border-top: 5px solid #ff7300;
+        border-right: 5px solid hsl(66, 100%, 50%);
+        border-bottom: 5px solid hsl(66, 100%, 50%);
+        border-radius: 10px 10px 10px 100px;
+        box-shadow: 0px 0px 90px 5px #00fff3;
+    }
+    
+    .skillContent li {
+    
+        list-style: none;
+        color: #fff;
+        margin: 50px 0px;
+        font-weight: 700;
+        position: relative;
+    }
+    
+    .skillContent li::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        top: calc(100% + 20px);
+        left: 0;
+        background: #fff;
+        border-radius: 1000px;
+        box-shadow: 0px 0px 6px 0px hsl(75deg 100% 50%);
+    }
+    
+    .skillContent li::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 10px;
+        top: calc(100% + 20px);
+        left: 0;
+        /* background: #fff; */
+        border-radius: 1000px;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-delay: 0.2ss;
+        /* animation-iteration-count: 2; */
+        /* animation-direction: forward; */
+        animation-fill-mode: forwards;
+        box-shadow: 0px 0px 8px 0px #00fff3;
+    }
+    
+    
+    
+    /*----------- progressBar % start here --------*/
+    /* ---------------%-1------------------------ */
+    
+    .afterBefore1 {
+        position: absolute;
+        /* background: #999; */
+        color: #fff;
+        top: 205px;
+        left: 517px;
+        font-size: 10px;
+    }
+    .afterBefore1 span {
+        margin-right: 14px;
+    }
+    
+    /* ---------------%-2------------------------ */
+    
+    .afterBefore2 {
+        position: absolute;
+        /* background: #999; */
+        color: #fff;
+        top: 273px;
+        left: 517px;
+        font-size: 10px;
+    }
+    
+    .afterBefore2 span {
+        margin-right: 14px;
+    }
+    
+    /* ---------------%-3------------------------ */
+    
+    .afterBefore3 {
+        position: absolute;
+        /* background: #999; */
+        color: #fff;
+        top: 342px;
+        left: 517px;
+        font-size: 10px;
+    }
+    
+    .afterBefore3 span {
+        margin-right: 14px;
+    }
+    
+    /* ---------------%-4------------------------ */
+    
+    .afterBefore4 {
+        position: absolute;
+        /* background: #999; */
+        color: #fff;
+        top: 410px;
+        left: 517px;
+        font-size: 10px;
+    }
+    
+    .afterBefore4 span {
+        margin-right: 14px;
+    }
+    
+    /* ---------------%-5------------------------ */
+    
+    .afterBefore5 {
+        position: absolute;
+        /* background: #999; */
+        color: #fff;
+        top: 479px;
+        left: 517px;
+        font-size: 10px;
+    }
+    
+    .afterBefore5 span {
+        margin-right: 14px;
+    }
+    
+    
+    /*----------- progressBar % end here --------*/
+    
+    
+    
+    .skillContent li.html::after {
+        animation-name: html;
+    }
+    
+    @keyframes html {
+        to {
+            width: 80%;
+            background: #ff5200;
+        }
+    }
+    
+    .skillContent li.css::after {
+        animation-name: css;
+    }
+    
+    @keyframes css {
+        to {
+            width: 70%;
+            background: rgb(248, 190, 0);
+        }
+    }
+    
+    
